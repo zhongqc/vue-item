@@ -8,8 +8,8 @@
           "browsers": [
             "> 1%",
             "last 2 versions",
-            "not ie",
-            "not edge",
+            "not ie <= 11",
+            "not edge <= 100",
             "FireFox >= 40",
             "Chrome >= 40",
             "Android >= 4.0"
