@@ -4,6 +4,7 @@
   "description": "A Component Library for Vue",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
     "build:module": "node build/build.js",
     "build:demo": "node build/build.js webpack.demo.conf",
     "test": "echo \"Error: no test specified\" && exit 1"
