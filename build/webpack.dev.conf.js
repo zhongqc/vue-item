@@ -40,7 +40,8 @@ const webpackConfig = webpackMerge(baseWebpackConfig, {
     quiet: true,
     watchOptions: {
       poll: true
-    }
+    },
+    disableHostCheck: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
