@@ -41,6 +41,23 @@ module.exports = {
       loader: 'babel-loader',
       include: path.resolve(__dirname, '../src')
     }, {
+      test: /\.(scss|sass)$/,
+      // loader: 'style-loader!css-loader!sass-loader',
+      include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../demo')],
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader'
+      }, {
+        loader: 'postcss-loader'
+      }, {
+        loader: 'sass-loader'
+      }]
+    }, {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader',
+      include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../demo')]
+    }, {
       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
       loader: 'url-loader',
       options: {

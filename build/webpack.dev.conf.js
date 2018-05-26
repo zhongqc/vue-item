@@ -31,7 +31,7 @@ const webpackConfig = webpackMerge(baseWebpackConfig, {
     compress: true,
     host: host,
     port: port,
-    open: true,
+    open: false,
     overlay: {
       warnings: false,
       errors: true

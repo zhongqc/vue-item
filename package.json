@@ -54,8 +54,11 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^3.1.0",
     "node-notifier": "^5.2.1",
+    "node-sass": "^4.9.0",
     "ora": "^2.0.0",
+    "postcss-loader": "^2.1.5",
     "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
     "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
@@ -67,8 +70,6 @@
     "webpack-merge": "^4.1.2"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
     "not ie <= 11",
     "not edge <= 100",
     "FireFox >= 40",
