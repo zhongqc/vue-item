@@ -2,7 +2,7 @@
   "name": "vue-item",
   "version": "0.1.0",
   "description": "A Component Library for Vue",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build:module": "node build/build.js",
