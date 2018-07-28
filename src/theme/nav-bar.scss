@@ -1,0 +1,30 @@
+$nav-height: 44px;
+$nav-bgc: #000;
+$nav-font-color: #fff;
+$nav-title-max-width: 60%;
+
+.nav-bar {
+  height: $nav-height;
+  width: 100%;
+  line-height: $nav-height;
+  background-color: $nav-bgc;
+  color: $nav-font-color;
+  position: relative;
+  .title {
+    height: $nav-height;
+    text-align: center;
+    margin: 0 auto;
+    max-width: $nav-title-max-width;
+  }
+  .left, .right {
+    position: absolute;
+    padding: 0 20px;
+    top: 0;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+}

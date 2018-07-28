@@ -1,6 +1,11 @@
-import ActionSheet from './ActionSheet/ActionSheet.vue'
+import ActionSheet from './action-sheet/index'
+import List from './list/index'
+import Cell from './cell/index'
+import NavBar from './nav-bar/index'
+import HeadBar from './head-bar/index'
+import FootBar from './foot-bar/index'
 
-const Components = [ActionSheet]
+const Components = [ActionSheet, List, Cell, NavBar, HeadBar, FootBar]
 
 const VueItem = {
   install (Vue, options = {}) {
@@ -8,7 +13,8 @@ const VueItem = {
       Vue.component(component.name, component)
     })
   },
-  version: '0.1.0'
+  version: '0.1.0',
+  ...Components
 }
 
 export default VueItem
