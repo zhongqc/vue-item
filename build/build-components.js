@@ -33,7 +33,10 @@ function compile (inDir, outDir) {
   }
 }
 
+console.log('\x1b[36m\x1b[1msrc/ → esModule/\x1b[22m\x1b[39m')
+let startTime = new Date()
 rm(outputDir, function () {
   fs.mkdirSync(outputDir)
   compile(inputDir, outputDir)
+  console.log(`\x1b[32mcompile \x1b[1mesModule in ${new Date() - startTime}ms\x1b[22m\x1b[39m`)
 })
