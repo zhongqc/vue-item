@@ -2,8 +2,8 @@
   "name": "vue-item",
   "version": "0.1.0",
   "description": "A Component Library for Vue",
-  "main": "lib/index.js",
-  "module": "src/index.js",
+  "main": "lib/vue-item.js",
+  "module": "esModule/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build:component": "node build/build-components.js && rollup -c build/rollup.config.js",
