@@ -17,4 +17,8 @@ const VueItem = {
   ...Components
 }
 
+if (window && window.Vue) {
+  window.Vue.use(VueItem)
+}
+
 export default VueItem
