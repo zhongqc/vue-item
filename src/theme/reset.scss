@@ -50,7 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font-family: Arial, Helvetica, "STHeiti STXihei", "Microsoft YaHei", Tohoma, sans-serif;
+  font-family: $default-font-family;
   color: $text-color;
   background-color: $background-color;
 }
