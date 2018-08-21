@@ -9,6 +9,7 @@
     "build:component": "node build/build-components.js && rollup -c build/rollup.config.js",
     "build:css": "node-sass src/theme/index.scss lib/index.css",
     "build:demo": "node build/build.js webpack.demo.conf",
+    "build:entry": "node build/build-entry.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -63,6 +64,7 @@
     "rollup": "^0.63.4",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
+    "uppercamelcase": "^3.0.0",
     "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
     "vue-router": "^3.0.1",
