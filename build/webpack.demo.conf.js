@@ -28,7 +28,8 @@ const webpackConfig = webpackMerge(baseWebpackConfig, {
         removeComments: true,
         collapseWhitespace: true,
         removeAttributeQuotes: true
-      }
+      },
+      favicon: './favicon.ico'
     })
   ],
   optimization: {
