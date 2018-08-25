@@ -49,7 +49,8 @@ const webpackConfig = webpackMerge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './demo/index.html',
-      inject: true
+      inject: true,
+      favicon: './demo/favicon.ico'
     }),
     new FriendlyErrorsPlugin({
       compilationSuccessInfo: {

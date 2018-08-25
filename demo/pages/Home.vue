@@ -1,8 +1,11 @@
 <template>
-  <div>
-    {{ msg }}
-    <br>
-    {{ subMsg }}
+  <div class="hello">
+    <head-bar>
+      <nav-bar title="Vue Item" leftText="back" :backArrow="false" rightText="right"></nav-bar>
+    </head-bar>
+    <list>
+      <cell></cell>
+    </list>
   </div>
 </template>
 
@@ -17,7 +20,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-</style>
