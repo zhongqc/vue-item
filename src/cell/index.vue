@@ -1,5 +1,7 @@
 <template>
-  <div class="item-cell"></div>
+  <div class="item-cell">
+    <slot />
+  </div>
 </template>
 <script>
   export default {

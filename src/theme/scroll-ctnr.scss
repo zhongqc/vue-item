@@ -1,0 +1,13 @@
+@import './var.scss';
+
+.item-scroll-ctnr {
+  position: relative;
+}
+
+.item-head-bar ~ .item-scroll-ctnr {
+  margin-top: $head-height;
+}
+
+.item-foot-bar ~ .item-scroll-ctnr {
+  margin-bottom: $foot-height;
+}
