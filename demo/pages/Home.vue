@@ -1,22 +1,24 @@
 <template>
   <div class="hello">
-    <head-bar>
-      <nav-bar title="Vue Item" leftText="back" :backArrow="false" rightText="right"></nav-bar>
-    </head-bar>
-    <list>
-      <cell></cell>
-    </list>
+    <item-nav-bar title="Vue Item" leftText="back" :backArrow="true" rightText="right"></item-nav-bar>
+    <item-cell-group v-for="list of ComponentList" :key="list.title" :groupTitle="list.title">
+      <item-cell v-for="component of list.list" :key="component.title">
+        {{ component.title }}
+      </item-cell>
+    </item-cell-group>
   </div>
 </template>
-
 <script>
-  export default {
-    name: 'HelloWorld',
-    data () {
-      return {
-        msg: 'Hello Vue-Item',
-        subMsg: 'Hello test'
-      }
+import ComponentList from '../assets/json/component-list'
+
+export default {
+  name: 'home',
+  data () {
+    return {
+      msg: 'Hello Vue-Item',
+      subMsg: 'Hello test',
+      ComponentList
     }
   }
+}
 </script>
