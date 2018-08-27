@@ -5,7 +5,7 @@
 </template>
 <script>
   export default {
-    name: 'popup',
+    name: 'item-popup',
     props: {
       transitionName: {
         type: String,

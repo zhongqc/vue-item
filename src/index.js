@@ -4,7 +4,7 @@ import Dialog from './dialog/index'
 import FootBar from './foot-bar/index'
 import Gallery from './gallery/index'
 import HeadBar from './head-bar/index'
-import List from './list/index'
+import IndexList from './index-list/index'
 import Loading from './loading/index'
 import NavBar from './nav-bar/index'
 import Picker from './picker/index'
@@ -20,7 +20,7 @@ const Components = [
   FootBar,
   Gallery,
   HeadBar,
-  List,
+  IndexList,
   Loading,
   NavBar,
   Picker,
@@ -43,7 +43,7 @@ const VueItem = {
   FootBar,
   Gallery,
   HeadBar,
-  List,
+  IndexList,
   Loading,
   NavBar,
   Picker,

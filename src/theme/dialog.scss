@@ -1,0 +1,13 @@
+@import './var.scss';
+@import './mixin.scss';
+
+$dialog-index: 1000;
+$dialog-content-width: 80%;
+
+.item-dialog {
+  @include fixed-full-screen;
+  .item-dialog-content {
+    @include fixed-center-screen;
+    width: $dialog-content-width;
+  }
+}

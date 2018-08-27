@@ -3,6 +3,6 @@
 </template>
 <script>
 export default {
-  name: 'loading'
+  name: 'item-loading'
 }
 </script>

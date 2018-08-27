@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'view-mask',
+  name: 'item-view-mask',
   props: {
     showFlag: {
       type: Boolean,

@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar">
+  <div class="item-nav-bar">
     <div class="left" @click="$emit('leftClick')">
       <slot name="left">
         <span class="back" v-if="backArrow" v-text="'<'"></span>
@@ -18,7 +18,7 @@
 </template>
 <script>
   export default {
-    name: 'nav-bar',
+    name: 'item-nav-bar',
     props: {
       title: {
         type: String
@@ -30,9 +30,6 @@
         type: String
       },
       backArrow: {
-        type: Boolean
-      },
-      isFixed: {
         type: Boolean
       }
     }

@@ -3,6 +3,6 @@
 </template>
 <script>
   export default {
-    name: 'cell'
+    name: 'item-cell'
   }
 </script>

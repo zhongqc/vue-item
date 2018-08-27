@@ -5,3 +5,10 @@
   bottom: 0;
   left: 0;
 }
+
+@mixin fixed-center-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

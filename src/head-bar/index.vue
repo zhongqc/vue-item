@@ -1,10 +1,10 @@
 <template>
-  <header class="head-bar">
+  <header class="item-head-bar">
     <slot></slot>
   </header>
 </template>
 <script>
 export default {
-  name: 'head-bar'
+  name: 'item-head-bar'
 }
 </script>

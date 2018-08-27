@@ -3,6 +3,6 @@
 </template>
 <script>
 export default {
-  name: 'picker'
+  name: 'item-picker'
 }
 </script>

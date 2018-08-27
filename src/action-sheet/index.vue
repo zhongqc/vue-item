@@ -8,7 +8,7 @@
 <script>
   import Popup from '../popup/index'
   export default {
-    name: 'action-sheet',
+    name: 'item-action-sheet',
     components: {Popup},
     props: {},
     data () {}
