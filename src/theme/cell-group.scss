@@ -1,5 +1,30 @@
+@import './var.scss';
+
 .item-cell-group {
   .item-cell-group-title {
+    padding: $cell-vertical-padding $cell-horizontal-padding;
+    background-color: $background-color-grey;
 
+  }
+  .item-cell-group-list {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: $line-width;
+      background-color: $line-color;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: $line-width;
+      background-color: $line-color;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
   }
 }

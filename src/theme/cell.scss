@@ -1,7 +1,28 @@
-$cell-padding: 20px;
+@import './var.scss';
 
 .item-cell {
-  padding: $cell-padding;
+  position: relative;
+  padding: $cell-vertical-padding $cell-horizontal-padding;
   box-sizing: border-box;
   width: 100%;
+  min-height: $cell-line-height;
+  line-height: $cell-line-height;
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    height: $line-width;
+    background-color: $line-color;
+    right: 0;
+    bottom: 0;
+    left: $cell-horizontal-padding;
+  }
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    height: $line-width;
+    background-color: $line-color;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }

@@ -4,7 +4,16 @@ $default-font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB
 // color
 $text-color: #000;
 $background-color: #fff;
+$line-color: #e5e5e5;
+$background-color-grey: #f8f8f8;
 
 // size
 $head-height: 44px;
 $foot-height: 49px;
+$line-width: 1px;
+
+// cell
+$cell-vertical-padding: 10px;
+$cell-horizontal-padding: 15px;
+$cell-min-height: 44px;
+$cell-line-height: 24px;
