@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'dialog',
+  name: 'dialog-demo',
   data () {
     return {
 

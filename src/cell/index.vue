@@ -1,5 +1,5 @@
 <template>
-  <div class="item-cell">
+  <div class="item-cell" @click="$emit('cellClick')">
     <slot>
       <div class="item-cell-primary">
         <span>{{title}}</span>
