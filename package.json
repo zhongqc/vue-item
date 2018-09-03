@@ -64,6 +64,8 @@
     "rollup": "^0.63.4",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
+    "svg2ttf": "^4.1.0",
+    "svgicons2svgfont": "^9.0.3",
     "uppercamelcase": "^3.0.0",
     "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
