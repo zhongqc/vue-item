@@ -42,20 +42,11 @@ module.exports = {
       include: path.resolve(__dirname, '../src')
     }, {
       test: /\.(scss|sass)$/,
-      // loader: 'style-loader!css-loader!sass-loader',
       include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../demo')],
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'css-loader'
-      }, {
-        loader: 'postcss-loader'
-      }, {
-        loader: 'sass-loader'
-      }]
+      use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader',
+      loader: ['style-loader', 'css-loader', 'postcss-loader'],
       include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../demo')]
     }, {
       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
