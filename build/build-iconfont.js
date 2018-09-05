@@ -9,7 +9,9 @@ const svgFontOutPath = path.join(__dirname, '../src/theme/icon.svg')
 const iconCssOutPath = path.join(__dirname, '../src/theme/icon.scss')
 
 const fontStream = new SVGIcons2SVGFontStream({
-  fontName
+  fontName,
+  fontHeight: 1024,
+  fontWeight: 500
 })
 
 let fontCss = []
