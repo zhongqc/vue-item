@@ -2,7 +2,7 @@
   <div class="item-nav-bar">
     <div class="left" @click="$emit('leftClick')">
       <slot name="left">
-        <span class="back" v-if="backArrow" v-text="'<'"></span>
+        <i class="item-icon arrow-left" v-if="backArrow"></i>
         {{ leftText }}
       </slot>
     </div>
