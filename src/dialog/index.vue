@@ -4,11 +4,14 @@
     <div class="item-dialog-content">
       <div class="item-dialog-title" v-if="title">{{ title }}</div>
       <div class="item-dialog-slot">
-        <slot>{{ message }}</slot>
-      </div>
-      <div class="item-dialog-button">
-        <slot name="button">
+        <slot>
+          <div class="item-dialog-message">{{ message }}</div>
         </slot>
+      </div>
+      <div class="item-dialog-buttons">
+        <div class="item-dialog-button" v-for="button in buttons" :key="button.text" :class="button.className" @click="button.click">
+          {{ button.text }}
+        </div>
       </div>
     </div>
   </div>

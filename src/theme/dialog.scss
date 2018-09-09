@@ -9,5 +9,33 @@ $dialog-content-width: 80%;
   .item-dialog-content {
     @include fixed-center-screen;
     width: $dialog-content-width;
+    background-color: #fff;
+    border-radius: 5px;
+    .item-dialog-title {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .item-dialog-slot {
+      padding: 15px;
+      color: $text-grey-color;
+    }
+    .item-dialog-buttons {
+      line-height: 44px;
+      display: flex;
+      position: relative;
+      .item-dialog-button {
+        text-align: center;
+        flex: 1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        height: $line-width;
+        background-color: $line-color;
+        right: 0;
+        top: 0;
+        left: 0;
+      }
+    }
   }
 }

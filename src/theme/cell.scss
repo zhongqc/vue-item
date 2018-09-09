@@ -2,11 +2,13 @@
 
 .item-cell {
   position: relative;
+  display: flex;
   padding: $cell-vertical-padding $cell-horizontal-padding;
   box-sizing: border-box;
   width: 100%;
   min-height: $cell-line-height;
   line-height: $cell-line-height;
+  align-items: center;
   &:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -24,5 +26,28 @@
     right: 0;
     bottom: 0;
     left: 0;
+  }
+  .item-cell-head {
+    display: flex;
+    flex: 0 0 auto;
+    height: 100%;
+  }
+  .item-cell-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    .item-cell-title {
+      color: $text-color;
+    }
+    .item-cell-desc {
+      color: $text-grey-color;
+    }
+  }
+  .item-cell-foot {
+    flex: 0 0 auto;
+    color: $text-grey-color;
+    .item-icon {
+      font-size: $small-font-size;
+    }
   }
 }
