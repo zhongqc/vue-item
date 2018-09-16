@@ -1,5 +1,5 @@
 <template>
-  <div class="item-dialog">
+  <div class="item-dialog" v-if="show">
     <ViewMask @viewMaskClick="$emit('dialogViewMaskClick')" />
     <div class="item-dialog-content">
       <div class="item-dialog-title" v-if="title">{{ title }}</div>
@@ -22,6 +22,12 @@ import ViewMask from '../view-mask/index'
 export default {
   name: 'item-dialog',
   props: {
+    show: {
+      type: Boolean,
+      default () {
+        return true
+      }
+    },
     title: {
       type: String | null,
       default: null
