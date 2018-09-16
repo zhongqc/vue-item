@@ -4,7 +4,7 @@ const upperCamelCase = require('uppercamelcase')
 const version = require('../package.json').version
 
 function getComponentsFileList () {
-  const whiteList = /(theme)|(index.js)$/
+  const whiteList = /(theme)|(index\.js)|(\.DS_Store)$/
   let componentsFileList = fs.readdirSync(path.join(__dirname, '../src'))
   componentsFileList = componentsFileList.filter(file => !whiteList.test(file))
   return componentsFileList
@@ -55,7 +55,7 @@ function buildScssEntry () {
   console.log('\x1b[36m\x1b[1mbuild src/theme/index.scss/\x1b[22m\x1b[39m')
   let startTime = new Date()
 
-  const whiteList = /(index.scss)|(reset.scss)|(mixin.scss)|(var.scss)$/
+  const whiteList = /(index\.scss)|(reset\.scss)|(mixin\.scss)|(var\.scss)|(\.DS_Store)|(icons)$/
   let scssFileList = fs.readdirSync(path.join(__dirname, '../src/theme'))
   scssFileList = scssFileList.filter(file => !whiteList.test(file))
   let importList = []
