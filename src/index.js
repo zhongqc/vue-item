@@ -1,4 +1,5 @@
 import ActionSheet from './action-sheet/index'
+import Button from './button/index'
 import Cell from './cell/index'
 import CellGroup from './cell-group/index'
 import Dialog from './dialog/index'
@@ -17,6 +18,7 @@ import ViewMask from './view-mask/index'
 
 const Components = [
   ActionSheet,
+  Button,
   Cell,
   CellGroup,
   Dialog,
@@ -42,6 +44,7 @@ const VueItem = {
   },
   version: '0.1.0',
   ActionSheet,
+  Button,
   Cell,
   CellGroup,
   Dialog,

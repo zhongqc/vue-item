@@ -1,14 +1,17 @@
 [{
   "title": "基本组件",
   "list": [{
-    "title": "cell"
+    "title": "cell",
+    "link": "/cell"
   }]
 }, {
   "title": "操作反馈",
   "list": [{
-    "title": "Action Sheet"
+    "title": "Action Sheet",
+    "link": "action-sheet"
   }, {
-    "title": "Button"
+    "title": "Button",
+    "link": "/button"
   }, {
     "title": "Dialog",
     "link": "/dialog"
