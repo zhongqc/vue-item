@@ -21,11 +21,11 @@ export default {
     type: {
       type: String
     },
-    round: {
-      type: Boolean,
-      default () {
-        return true
-      }
+    leftIcon: {
+      type: String
+    },
+    rightIcon: {
+      type: String
     },
     loading: {
       type: Boolean,
@@ -39,11 +39,17 @@ export default {
         return false
       }
     },
-    icon: {
-      type: String
+    nativeType: {
+      type: String,
+      default () {
+        return 'button'
+      }
     },
-    iconPosition: {
-      type: String
+    size: {
+      type: String,
+      default () {
+        return 'M'
+      }
     }
   },
   computed: {
