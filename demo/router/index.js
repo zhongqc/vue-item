@@ -7,6 +7,7 @@ import Button from '../pages/button'
 Vue.use(VueRouter)
 
 export default new VueRouter({
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'Hello Vue Item',
